@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 40px;
+            color: #262626;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0077cc;
+        }
+        .separator {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+        .facebook-login {
+            background: #385185;
+            margin-top: 10px;
+        }
+        .facebook-login:hover {
+            background: #2f467f;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Instagram</h1>
+        <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+        <input type="password" placeholder="Пароль">
+        <button>Войти</button>
+        <div class="separator">ИЛИ</div>
+        <button class="facebook-login">Войти через Facebook</button>
+    </div>
+</body>
+</html>

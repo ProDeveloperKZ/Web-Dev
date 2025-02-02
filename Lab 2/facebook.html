@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .left {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .left h1 {
+            color: #1877f2;
+            font-size: 48px;
+        }
+        .left p {
+            font-size: 20px;
+        }
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 360px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #166fe5;
+        }
+        .create-account {
+            background: #42b72a;
+            margin-top: 10px;
+        }
+        .create-account:hover {
+            background: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="login-box">
+            <input type="text" placeholder="Электронный адрес или номер телефона">
+            <input type="password" placeholder="Пароль">
+            <button>Вход</button>
+            <button class="create-account">Создать аккаунт</button>
+        </div>
+    </div>
+</body>
+</html>
