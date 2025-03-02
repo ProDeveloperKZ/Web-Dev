@@ -1,0 +1,42 @@
+.results{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-auto-rows: 500px; 
+    gap: 20px; 
+}
+
+.listing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.listing-photo{
+    width: 150px;
+}
+
+.remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+.remove-button:hover {
+background-color: #c0392b;
+}
+
+.likes{
+    display: flex;
+    gap:20px;
+}
+
+.listing-link,.remove-button,.likes{
+    margin-top: auto;
+}

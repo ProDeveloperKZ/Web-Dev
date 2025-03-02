@@ -1,0 +1,15 @@
+<section >
+    <h2>{{ album?.title }}</h2>
+    <p>Album ID: {{ album?.id }}</p>
+    <p>User ID: {{ album?.userId }}</p>
+
+
+    <input [(ngModel)]="album.title">
+    <button (click)="saveAlbum()">Save</button>
+
+    <br><br>
+    <a [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+      
+    <br><br>
+    <button (click)="goBack()"> Return</button>
+</section>

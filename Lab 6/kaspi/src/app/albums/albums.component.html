@@ -1,0 +1,8 @@
+<h2>Albums</h2>
+<ul class="albums">
+    <button (click)="reloadData()" class="update-btn">Reload from Server</button>
+    <li *ngFor="let album of albums" class="album">
+        <a [routerLink]="['/albums/', album.id]">{{album.id}} {{ album.title }}</a>
+        <button (click)="deleteAlbum(album.id)">Delete</button>
+    </li>
+</ul>

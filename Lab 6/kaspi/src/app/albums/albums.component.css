@@ -1,0 +1,15 @@
+.albums{
+    width:50%;
+}
+
+.album{
+    display: flex;
+    margin-bottom: 10px;
+}
+.album button{
+    margin-left: auto;
+}
+
+.update-btn{
+    margin-bottom: 50px;
+}

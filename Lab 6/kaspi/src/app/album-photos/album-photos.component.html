@@ -1,0 +1,10 @@
+<h2>Album {{ albumId }} - Photos</h2>
+
+<button (click)="goBack()" class="return-btn">Return</button>
+<div class="photo-container">
+  <div *ngFor="let photo of photos" class="photo-card">
+    <img [src]="photo.thumbnailUrl " [alt]="photo.title" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+
